@@ -20,48 +20,48 @@ import java.nio.ByteBuffer;
 
 public class Packet {
 
-	/**
-	 * The numeric identifier for this packet.
-	 */
-	private int opcode;
+   /**
+    * The numeric identifier for this packet.
+    */
+   private int opcode;
 
-	/**
-	 * The data length of this packet.
-	 */
-	private int length;
+   /**
+    * The data length of this packet.
+    */
+   private int length;
 
-	/**
-	 * The data stored in this packet.
-	 */
-	private ByteBuffer payload;
+   /**
+    * The data stored in this packet.
+    */
+   private ByteBuffer payload;
 
-	public Packet(int opcode, int length, ByteBuffer payload) {
-		this.opcode = opcode;
-		this.length = length;
-		this.payload = payload;
-	}
+   public Packet(int opcode, int length, ByteBuffer payload) {
+	 this.opcode = opcode;
+	 this.length = length;
+	 this.payload = payload;
+   }
 
-	public int getOpcode() {
-		return opcode;
-	}
+   public int getOpcode() {
+	 return opcode;
+   }
 
-	public void setOpcode(int opcode) {
-		this.opcode = opcode;
-	}
+   public void setOpcode(int opcode) {
+	 this.opcode = opcode;
+   }
 
-	public int getLength() {
-		return length;
-	}
+   public int getLength() {
+	 return length;
+   }
 
-	public void setLength(int length) {
-		this.length = length;
-	}
+   public void setLength(int length) {
+	 this.length = length;
+   }
 
-	public ByteBuffer getPayload() {
-		return payload;
-	}
+   public ByteBuffer getPayload() {
+	 return payload;
+   }
 
-	public void setPayload(ByteBuffer payload) {
-		this.payload = payload;
-	}
+   public void setPayload(ByteBuffer payload) {
+	 this.payload = payload;
+   }
 }

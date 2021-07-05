@@ -25,17 +25,17 @@ import com.vicc.net.ChannelDemultiplexerBootstrap;
 
 public class TestMainApp {
 
-	/**
-	 * The entry point for the application.
-	 * 
-	 * @param commands The command line arguments.
-	 * @throws IOException The exception thrown if an input or output error occurs.
-	 */
-	public static void main(String[] commands) throws IOException {
-		ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
-		ChannelDemultiplexerBootstrap bootstrap = new ChannelDemultiplexerBootstrap(executor,
-				new TestChannelDemultiplexer());
+   /**
+    * The entry point for the application.
+    * 
+    * @param commands The command line arguments.
+    * @throws IOException The exception thrown if an input or output error occurs.
+    */
+   public static void main(String[] commands) throws IOException {
+	 ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
+	 ChannelDemultiplexerBootstrap bootstrap = new ChannelDemultiplexerBootstrap(executor,
+		  new TestChannelDemultiplexer());
 
-		bootstrap.initialize(new InetSocketAddress(43594));
-	}
+	 bootstrap.initialize(new InetSocketAddress(43594));
+   }
 }

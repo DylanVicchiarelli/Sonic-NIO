@@ -22,5 +22,5 @@ import com.vicc.net.ClientSession;
 
 public interface MessageEncoder<T> {
 
-	ByteBuffer encode(ClientSession session, T message);
+   ByteBuffer encode(ClientSession session, T message);
 }

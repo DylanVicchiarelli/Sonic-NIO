@@ -20,5 +20,5 @@ import com.vicc.net.ClientSession;
 
 public interface MessageDecoder {
 
-	boolean decode(ClientSession session);
+   boolean decode(ClientSession session);
 }
